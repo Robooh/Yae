@@ -66,8 +66,9 @@ main {
 
 @keyframes rgb-border {
     0% { border-color: rgb(255, 0, 0); }
-    33% { border-color: rgb(197, 168, 0); }
-    66% { border-color: rgb(99, 0, 82); }
+    25% { border-color: rgb(197, 168, 0); }
+    50% { border-color: rgb(99, 0, 82); }
+    75% { border-color: #433c5c; }
     100% { border-color: rgb(255, 0, 0); }
 }
 
