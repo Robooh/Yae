@@ -1,0 +1,79 @@
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .tray {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    .button {
+        padding: 12px 18px;
+        font-size: 14px;
+        margin: 4px;
+        flex: 1 1 40%;
+    }
+    
+    #prev-button,
+    #next-button {
+        display: none;
+    }
+
+
+    #gif-display {
+        margin: 10px 0;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    #gif {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Additional breakpoints */
+@media (max-width: 400px) {
+    .button {
+        flex: 1 1 100%;
+        padding: 10px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+}

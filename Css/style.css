@@ -1,0 +1,95 @@
+/* Vars */
+:root {
+    --background-color: #292929;
+    --primary-color: #433c5c;
+    --secondary-color: #ffffff;
+    --border-color: #030303;
+    --text-color: #333333;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-bottom: 4px solid var(--border-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.tray {
+    margin: 20px 0;
+}
+
+.button {
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #36304b;
+    transform: translateY(-2px);
+}
+
+
+
+@keyframes rgb-border {
+    0% { border-color: rgb(255, 0, 0); }
+    33% { border-color: rgb(197, 168, 0); }
+    66% { border-color: rgb(99, 0, 82); }
+    100% { border-color: rgb(255, 0, 0); }
+}
+
+#gif-display {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: rgb-border 3s infinite;
+}
+
+
+footer {
+    margin-top: auto;
+    font-size: 14px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-top: 4px solid var(--border-color);
+    text-align: center;
+}
